@@ -1,0 +1,614 @@
+@import url('http://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: rgb(30, 30, 30);
+    color: hsl(228, 8%, 65%);
+    font-size: medium;
+}
+
+.heading{
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+span{
+    color: #0ef;
+}
+
+/*------------------Navbar---------------------*/
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: #1e1f1fcc;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+nav img{
+    display: none;
+}
+
+nav a{
+	text-decoration: none;
+	color: white;
+	margin: 1rem .5rem;
+}
+
+nav a:hover{
+    color: #0ef;
+}
+
+.close{
+	top: 0rem;
+	left: 0rem;
+}
+
+.menu-icons{
+	color: white;
+	display: none;
+	cursor: pointer;
+}
+/*-----------------------Home---------------------------*/
+
+.home{
+    min-height: 99vh;
+    padding: 0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-content{
+    animation: SlideRight 2s ease forwards;
+}
+
+.home-content h2{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+.home-content h1{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.home-content p{
+    padding-right: 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.home .img img{
+    animation: SlideLeft 2s ease forwards;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 50px #0ef;
+    
+}
+
+.home .imgs img{
+    animation: SlideLeft 2s ease forwards;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 50px #0ef;
+    display: none;
+}
+
+.home-sci i{
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #0ef;
+    border: 1px solid cyan;
+    border-radius: 50%;
+    margin-right: 1rem
+}
+
+.Button a{
+    border: 1px solid #0ef;
+    padding: .8rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #081b29;
+    background: #0ef;
+}
+
+.Button a:hover{
+    box-shadow: 0 0 15px #0ef;
+    color: white;
+}
+
+@keyframes SlideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/*-----------------------About---------------------------*/
+
+.about{
+    min-height: 95vh;
+    background: rgb(35, 36, 36);
+    padding: 4rem 9rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content{
+    animation: SlideLeft 2s ease forwards;
+}
+
+.about .img1 img{
+    height: 300px;
+    width: 300px;
+    animation: SlideRight 2s ease forwards;
+}
+
+.content p{
+    padding-bottom: 1.5rem;    
+}
+
+/*------------------------------education----------------------------------*/
+
+.edu-exp{
+    padding: 3rem 9rem;
+    display: flex;
+}
+
+.education,
+.experience{
+    width: 50%;
+    margin: .5rem 1.5rem; 
+}
+
+.edu-heading{
+    color: #0ef;
+    text-align: center;
+}
+
+.box{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgb(37, 39, 39);
+}
+
+.box h4{
+    line-height: 2.5rem;
+}
+
+.experience .box{
+    padding-left: 2rem;
+}
+
+.box h1{
+    color: #fff;
+    line-height: 2.5rem;
+    font-size: larger;
+}
+
+.box:hover{
+    box-shadow:  0 0 .5rem #0ef;
+    transform: scale(1.05);
+}
+
+.box .marks{
+    color: hsl(228, 8%, 65%);
+    font-size: 13px;
+}
+
+/*-----------------------Skills---------------------------*/
+
+.skill{
+    background: rgb(35, 36, 36);
+    padding: 5rem 9rem .5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.myskills h2{
+    line-height: 3.5rem;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.skills{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+}
+
+.skills .skills-box{
+    padding: 2rem;
+}
+
+.skills-box h4{
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #fff;
+}
+
+.skills-box li{
+    line-height: 2rem;
+
+}
+
+
+/*-----------------------Services--------------------------*/
+
+.services{
+    padding: 4rem 9rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    align-items: center;
+    text-align: center;
+}
+
+.heading h1{
+    padding-top: 4rem;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.service-box{
+    padding: 2rem;
+    background-color:rgb(37, 39, 39);
+    animation: SlideBottom 2s ease forwards;
+}
+
+.service-box:hover{
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef,
+    0 0 50px #0ef,
+    0 0;
+}
+
+.service-box i{
+    font-size: 2.5rem;
+    color: #0ef;
+}
+
+.service-box h1{
+    padding: 1.3rem 0;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.service-box p{
+    font-weight: none;
+}
+
+/*------------------------------projects-----------------*/
+
+.projects{
+    padding: 3rem 9rem;  
+    background-color: rgb(38, 39, 39); 
+    color: white;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem,100%), 1fr));
+    align-items: center;
+    grid-gap: 2.5rem;
+}
+
+.projects-container .projects-box{
+    margin-top: 2rem;
+    position: relative;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+}
+
+/*.projects-box:hover{
+    box-shadow:  0 0 1rem #0ef;
+}*/
+
+.projects-box img{
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+
+.projects-box:hover img{
+    transform: scale(1.1);
+}
+
+.projects-box .projects-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1), rgb(67, 123, 128));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.projects-box:hover .projects-layer{
+    transform: translateY(0);
+}
+
+.projects-layer h4{
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.projects-layer p{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: .3rem 0 .8rem;
+}
+
+.projects-layer a{
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+
+/*----------------------------Contact--------------------*/
+
+.contact{
+    padding: 4rem 9rem; 
+    text-align: center;
+}
+
+.contact .input{
+    padding: 1rem;
+    min-width: 400px;
+    background: rgb(38, 39, 39); 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 1rem;    
+}
+.contact .input:hover{
+    border: 1px solid cyan;
+}
+
+.inputs{
+    text-align: center;
+}
+
+.icons i{
+    padding: .5rem;
+    font-size: 1.5rem;
+    color: #0ef;
+    border: 1px solid cyan;
+    border-radius: 50%;
+    margin: 2rem 1rem;
+}
+
+.icons i:hover{
+    color: #081b29;
+    background-color: #0ef;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef,
+    0 0 50px #0ef,
+    0 0;
+}
+
+/*----------------------------------footer------------------------------------*/
+
+.footer{
+    text-align: center;
+    color: #fff;
+    background: rgb(35, 36, 36);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icons i{
+    color: #0ef;
+}
+
+
+/*-----------------------------------Resoponive-Phone---------------------------------------*/
+
+@media only screen and (max-width: 800px){
+    .navbar a{
+       display: flex;
+       flex-direction: column;
+       background-color: #081b29;
+       padding: 2rem;
+       top: 25px;
+       right: 5px;
+       width: 200px;
+       height: 500px;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    .home{
+        margin-top: 4rem ;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .img img{
+        display: none;
+    }
+
+    .home .imgs img{
+        display: block;
+        margin: 2rem 0;
+    }
+
+    .home-content p{
+       padding: 1rem;
+    }
+
+    .about,
+    .edu-exp{
+        padding:0rem;
+        flex-direction: column; 
+    }
+
+    .services{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 1.5rem;
+    }
+
+    .contact{
+        padding:  0 3rem ;
+    }
+
+    .edu-exp{
+        align-items: center;
+    }
+
+    .education,
+    .experience{
+        width: 100%;
+        margin: .5rem ; 
+    }
+
+    .img1{
+        display: none;
+    }
+    
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skill{
+        padding: 2rem 5rem;
+    }
+    
+    .skills-box li{
+        text-align: center;
+    }
+
+    .projects-container{
+        align-items: center;
+    }
+
+}
+
+/*-----------------------------------Resoponive-Tab---------------------------------------*/
+
+@media only screen and (max-width: 1210px){
+    .links{
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		right: 0;
+        top: 3rem;
+		background: #020303cc;
+        backdrop-filter: blur(50px);
+		padding: 3rem;
+	}
+
+	.menu-icons{
+		display: block;
+	}
+
+    .home,
+    .services,
+    .edu-exp,
+    .skill,
+    .contact{
+        padding: 2rem 1rem;
+    }
+
+    .about{
+        padding: 3rem 1rem;
+        min-height: 0;
+    }
+
+    .projects{
+        padding: 2rem 3rem;
+    }
+
+    .footer{
+        display: block;
+    }
+
+    .heading{
+        line-height: 2rem;
+    }
+}
+
+

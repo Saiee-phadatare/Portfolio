@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaieePhadatare</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+
+    <!---------------------------NAVBAR------------------------------->
+
+    <nav>
+        <div class="logo">
+            <p>Saiee Phadatare</p>
+        </div>
+
+        <div class="links">
+            <img src="crosse.png" alt="close" class="close" height="15px" width="15px">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education&Experience</a>
+            <a href="#Services">Services</a>
+            <a href="#Project">Project</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <div class="menu-icons">
+            <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+    </nav>
+
+
+    <script>
+        document.getElementById("menu-icon").addEventListener("click", function(){
+        document.querySelector(".links").style.display = "flex";
+        document.querySelector(".close").style.display = "flex";
+        })
+
+        document.querySelector(".close").addEventListener("click",function(){
+        document.querySelector(".links").style.display = "none";
+        })
+    </script>
+
+    <!---------------------------Home---------------------------------->
+    <section id="home">
+    <div class="home">
+
+        
+        <div class="imgs">
+            <img src="h.jpeg" alt="SaieePhadatare">
+        </div>
+
+        <div class="home-content">
+            <h2>Hii, It's me <span>Saiee Phadatare</span></h2>
+            <h1>Software Developer</h1>
+            <p>Enthusiastic MSc Computer Science student at Savitribai Phule Pune University. Experienced in creating responsive and functional web applications.Eager to transition into a full-time role where I can utilize
+                my skills and knowledge to contribute meaningfully to a dynamic team.</p>
+
+            <div class="home-sci">
+                <a href="https://github.com/Saiee-phadatare"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saieephadatare/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+
+            <div class="Button">
+                <br><br>
+                <a href="Resume.pdf" download>Resume</a>
+            </div>
+        </div>
+
+        <div class="img">
+            <img src="h.jpeg" alt="SaieePhadatare">
+        </div>
+    </div>
+    
+    </section>
+
+    <!---------------------------About--------------------------------->
+
+    <section id="about" class="about">
+
+        <div class="img1">
+            <img src="h.jpeg" alt="SaieePhadatare">
+        </div>
+
+        <div class="about-content">
+            <div class="heading">
+                <h1>About <span>Me</span></h1>
+            </div>
+
+            <div class="content">
+                <p>I am a graduate of Pratibha College with a CGPA of 8.59. I have strong knowledge of HTML, CSS, JavaScript, Node.js, Express.js, SQL, and MongoDB, and I have built projects using these technologies. My goal is to continuously learn and grow while making meaningful contributions to an organization's success. Currently, I am deepening my expertise in React.js to enhance my front-end development capabilities.</p>
+            </div>
+
+            <div class="Button">
+                <br>
+                <a href="#Contact">Contact Me</a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--------------------Education&Experience------------------------->
+
+    <section id="education">
+
+        <div class="heading">
+            <h1>Education and Experience</h1>
+        </div>
+
+       <div class="edu-exp">
+
+            <div class="education">
+                <div class="edu-heading">
+                    <h1>Education</h1>
+                </div>
+            
+                <div class="box">
+                    <p>2022 - 2024</p>
+                    <h1>Bachelor of Computer Science(BCS)</h1>
+                    <p>Savitribai Phule Pune University <span class="marks">(CGPA: 8.59)</span></p>
+                </div>
+                <div class="box">
+                    <p>2020 - 2021</p>
+                    <h1>HSC</h1>
+                    <p>Dr D. Y. Patil <span class="marks">(Percentage: 83.50%)</span></p>
+                </div>
+                <div class="box">
+                    <p>2019</p>
+                    <h1>CBSE</h1>
+                    <p>Bud's International School <span class="marks">(Percentage: 68.83%)</span></p>
+                </div>
+            </div>
+
+            <div class="experience">
+                <div class="edu-heading">
+                    <h1>Experince</h1>
+                </div>
+                <div class="box">
+                    <p>Internship</p>
+                    <h1>Techview Infotech | 2024</h1>
+                    <h4>Front-End Developer</h4>
+                    <p><ul>
+                        <li>As a Intern at Techview Infotech, I focused on mastering web development skills like HTML, CSS, and JavaScript</li>
+                        <li>I actively contribute to projects while refining my UI design abilities.</li>
+                        <li>Worked on a Car Retail System as part of my internship project.</li>
+                    </ul></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------Skills------------------------------->
+
+    <section id="Skills" class="skill"> 
+
+        <div class="myskills">
+            <h2>My <span>Skills</span></h2>
+            <p>These are my defining skills. Explore further to learn about the technologies and software I'm proficient in</p>
+        </div>
+
+        <div class="skills">
+            <div class="skills-box">
+                <h4>Frontend</h4>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </div>
+
+            <div class="skills-box">
+                <h4>Backend</h4>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>JAVA(basic)</li>
+            </div>
+
+            <div class="skills-box">
+                <h4>Database</h4>
+                <li>MySQL</li>
+                <li>PgSQL</li>
+                <li>MongoDB</li>
+            </div>
+
+            <div class="skills-box">
+                <h4>Graphics Tools</h4>
+                <li>Canva</li>
+                <li>Figma</li>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--------------------------Services------------------------------->
+
+    <section id="Services">
+
+        <div class="heading">
+            <h1>My Services</h1>
+        </div>
+
+        <div class="services">
+
+        <div class="service-box">
+            <i class="fa-regular fa-window-restore"></i>
+            <h1>Front-End <br>Development</h1>
+            <p>I am proficient in front-end development with a strong command of HTML, CSS, and JavaScript. 
+                I have successfully designed and deployed several projects, showcasing my ability to create 
+                responsive and interactive user interfaces. Currently, I am expanding my knowledge by learning React.js.</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-file-import"></i>
+            <h1>Back-End <br>Development</h1>
+            <p>I have a strong foundation in back-end development, with expertise in Node.js. 
+                My skills include building scalable web applications, managing server-side logic, 
+                and integrating with various databases. Additionally, I have developed a REST API using HTTP methods, 
+                demonstrating my ability to create efficient and structured API endpoints for web applications..</p>
+        </div>
+
+        <div class="service-box">
+            <i class="fa-solid fa-database"></i>
+            <h1>Database <br> Management</h1>
+            <p>I have a solid understanding of database management, proficient in both SQL (MySQL, PostgreSQL) 
+                and NoSQL (MongoDB). I am skilled in designing efficient database structures and optimizing queries 
+                for performance.</p>
+        </div>
+
+    </section>
+
+    <!---------------------------Project------------------------------->
+
+    <section id="Project" class="projects">
+
+        <div class="heading">
+            <h1>My Recent <span>Projects</span></h1>
+        </div>
+
+        <div class="projects-container">
+
+            <div class="projects-box">
+                <img src="url-short.jpg" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>URL Shortener</p>
+                    <a href="https://github.com/Saiee-phadatare/Url-Shorten"><i class="fa-solid fa-up-right-from-square"></i> View Repo</a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="rest-api.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>RESTful Mongo API</p>
+                    <a href="https://github.com/Saiee-phadatare/Rest-api"><i class="fa-solid fa-up-right-from-square"></i> View Repo</a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="Quiz-app.jpg" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>Quiz App</p>
+                    <a href="https://saiee-phadatare.github.io/Quiz-app/"><i class="fa-solid fa-up-right-from-square"></i> View Demo</a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="space-fight.jpg" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>Space Fight</p>
+                    <a href="https://saiee-phadatare.github.io/space-fight/"><i class="fa-solid fa-up-right-from-square"></i> View Demo</a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="stylecon.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>Style-Conference</p>
+                    <a href="https://saiee-phadatare.github.io/style-conference/"><i class="fa-solid fa-up-right-from-square"></i> View Demo</a>
+                   
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="to-do-list.jpg" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>To-Do-List</p>
+                    <a href="https://saiee-phadatare.github.io/todo-list/"><i class="fa-solid fa-up-right-from-square"></i> View Demo</a>
+                </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="calculator.png" alt="">
+                <div class="projects-layer">
+                    <h4>Web</h4>
+                    <p>Calculator</p>
+                    <a href="https://saiee-phadatare.github.io/Calculator/"><i class="fa-solid fa-up-right-from-square"></i> View Demo</a>
+                </div>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <!---------------------------Contact------------------------------->
+
+    <section id="Contact" class="contact">
+        
+        <div class="heading">
+            <h1>Contact <span>Me</span></h1>
+        </div>
+        
+        <form action="">
+            <div class="inputs">
+                <input class="input" type="text" placeholder="Enter name"><br>
+                <input class="input" type="email" placeholder="Enter Email"><br>
+                <textarea class="input" cols="30" rows="10" placeholder="Message"></textarea><br>
+             </div>
+
+            <div class="Button">
+                <br>
+                <a href="#">Submit</a>
+            </div>
+        </form>
+
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="ssp.saiee@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/saieephadatare"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Saiee-phadatare"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+    </section>
+
+    <!-------------------------------------Footer------------------------------->
+
+    <section id="Footer" class="footer">
+            <p>Design by <br> <span>Saiee Phadatare</span></p>
+            <div class="footer-icons">
+                <i class="fa-solid fa-phone"></i> +91 8999912582 <br>
+                <i class="fa-solid fa-envelope"></i> ssp.saiee@gmail.com
+            </div>
+            <p>Copyright © Portfolio. <br> All rights reserved.</p>
+    </section>
+
+    <!-- <div id="google_translate_element"></div>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function googleTranslateElementInit(){
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        }
+    </script> -->
+
+
+    
+</body>
+</html>
